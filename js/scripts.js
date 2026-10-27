@@ -9,7 +9,9 @@ onload = function() {
   pElement.append("The HTML of this webpage was created with JavaScript.");
   body.append(pElement);
   const imgElement = document.createElement("img");
-  imgElement.append("https://cdn.download.ams.birds.cornell.edu/api/v1/202984001/900", "This is an image of a Multicolored Tanager bird from birdsoftheworld.org", "width:50%");
+  imgElement.src = 'https://cdn.download.ams.birds.cornell.edu/api/v1/asset/202984001/900';
+  imgElement.alt = 'This is an image of a Multicolored Tanager bird from birdsoftheworld.org';
+  imgElement.style = 'width:50%';
   body.append(imgElement);
   const h1Element2 = document.createElement("h1");
   h1Element2.append("Facts about the Multicolored Tanager");
@@ -26,5 +28,7 @@ onload = function() {
   h2Element.append("Source");
   body.append(h2Element);
   const aElement = document.createElement("a");
-  link.textContent = 'Link Title'
+  aElement.href = 'https://en.wikipedia.org/wiki/Multicoloured_tanager';
+  aElement.append("Wikipedia");
+  body.append(aElement);
 }
