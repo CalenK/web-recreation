@@ -1,0 +1,30 @@
+onload = function() {
+  const h1 = document.querySelector("h1");
+  h1.remove();
+  const h1Element = document.createElement("h1");
+  h1Element.append("Webpage Recreation Practice");
+  const body = document.querySelector("body");
+  body.append(h1Element);
+  const pElement = document.createElement("p");
+  pElement.append("The HTML of this webpage was created with JavaScript.");
+  body.append(pElement);
+  const imgElement = document.createElement("img");
+  imgElement.append("https://cdn.download.ams.birds.cornell.edu/api/v1/202984001/900", "This is an image of a Multicolored Tanager bird from birdsoftheworld.org", "width:50%");
+  body.append(imgElement);
+  const h1Element2 = document.createElement("h1");
+  h1Element2.append("Facts about the Multicolored Tanager");
+  body.append(h1Element2);
+  const li1 = document.createElement("li");
+  const li2 = document.createElement("li");
+  li1.append("It is endemic to the mountains of Colombia.");
+  li2.append("It usually searches for insects on the underside of leaves of outer limbs while clinging to leaves with it's feet.");
+  const ulElement = document.createElement("ul");
+  ulElement.prepend(li1);
+  ulElement.append(li2);
+  body.append(ulElement);
+  const h2Element = document.createElement("h2");
+  h2Element.append("Source");
+  body.append(h2Element);
+  const aElement = document.createElement("a");
+  link.textContent = 'Link Title'
+}
